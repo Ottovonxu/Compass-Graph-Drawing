@@ -14,6 +14,13 @@ object myFirstScalaObject {
     val pairs = words.map{ word => (word,1)}
     val wordCounts = pairs.reduceByKey(_+_)
     wordCounts.foreach(wordNumberPair => println(wordNumberPair._1 + ":" + wordNumberPair._2))
+
+
+    val ReadingNodeAndEdgeCSVfile=new ImportCSVFile
+//    val CSVedge = sc.textFile("/root/compass_layout_processor/input/edgeKVM_LanguageAdded.csv")
+//    val ObjectArrayEdge=ReadingNodeAndEdgeCSVfile.ReadingCSVFileIntoArray(CSVedge,3)
+//    val FrequencyofNode=ReadingNodeAndEdgeCSVfile.GetNodeFrequency(ObjectArrayEdge,sc)
+//    println(FrequencyofNode.apply("-1"))
     sc.stop()
   }
 }

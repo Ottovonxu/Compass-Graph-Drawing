@@ -48,7 +48,7 @@ object ReadCompassCSV {
     conf.setMaster("local")
     val sc = new SparkContext(conf)
     val readnode = new reader()
-    val pathnode = "/home/otto/IdeaProjects/compass/src/test/resources/examples/node.csv"
+    val pathnode = "/home/otto/IdeaProjects/compass/src/test/resources/examples/nodeKVM.csv"
     val CSVdata = readnode.run(pathnode)
     val productnode = CSVdata.length/2
     print(productnode)
@@ -63,7 +63,7 @@ object ReadCompassCSV {
    print(nodes(2))
     print("\n")
     val readedge = new reader()
-    val pathedge = "/home/otto/IdeaProjects/compass/src/test/resources/examples/edge.csv"
+    val pathedge = "/home/otto/IdeaProjects/compass/src/test/resources/examples/edgeKVM.csv"
     val CSVdataedge = readedge.run(pathedge)
     val productedge = CSVdataedge.length/3
     print(CSVdataedge.length)

@@ -4,9 +4,9 @@ import java.awt._
 import java.awt.geom.Ellipse2D
 import at.ait.dme.forcelayout.{ Node, Edge, SpringGraph, Vector2D }
 
-class Node2D(val x: Int, val y: Int, val node: Node)
 
-class Edge2D(val from: Node2D, val to: Node2D, val edge: Edge)
+
+
 
 private[renderer] trait GraphRenderer {
 
